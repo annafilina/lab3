@@ -1,0 +1,101 @@
+/*Обнуление стилей*/
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("../G8EePO.jpg");
+    background-size: cover;
+
+}
+
+.content{
+    max-width: 30%;
+    margin: 50px auto;
+}
+
+@media (max-width: 1200px) {
+    .content{
+        max-width: 40%;
+    }
+}
+
+.calculator{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+.field{
+    overflow: hidden;
+    height: 70px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.field p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #400e4b;
+    padding: 0 10px 10px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.grid__row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.grid__item{
+    text-align: center;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 2px;
+    color: #400e4b;
+}
+
+.grid__item:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.addition{
+    border-radius: 15px 0 0 0;
+}
+
+.clear{
+    border-radius: 0 15px 0 0;
+}
+
+.equal{
+    border-radius: 0 0 15px 0;
+}
+
+.change{
+    border-radius: 0 0 0 15px;
+}
+
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+
+
